@@ -21,9 +21,9 @@ app.config.from_object(Config)
     file_handler.setLevel(logging.INFO)
     app.logger.addHandler(file_handler)"""
 
-app.logger.setLevel(logging.WARNING)
+app.logger.setLevel(logging.INFO)
 streamHandler = logging.StreamHandler()
-streamHandler.setLevel(logging.WARNING)
+streamHandler.setLevel(logging.INFO)
 app.logger.addHandler(streamHandler)
     
 Session(app)
